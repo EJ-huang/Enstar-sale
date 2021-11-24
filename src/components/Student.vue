@@ -1,41 +1,38 @@
 <template>
 
-    <div class="p-2 lg:p-0">
-        <!-- <transition appear @before-enter="beforeEnter" @enter="enter" @leave="leave"> -->
-            <div class="row flex  md:flex-col flex-wrap  md:content-around p-5" >
-                <div class="flex items-start bg-secondary text-lg w-32 text-white mt-5 rounded-md p-2">
-                    <h1 class="flex  font-bold">非常多的學生</h1>
+    <div class="row w-full">
+            <div class="row flex  md:flex-col flex-wrap  md:content-around p-5 mb-8" >
+                <div class="bg-secondary text-lg xl:text-4xl  text-white mt-5 rounded-md p-2">
+                    <h1 class="flex font-bold">非常多的學生</h1>
                 </div>
-                <div class="text-3xl lg:text-5xl text-left pt-2">學會這套秘密公式 已經成為出色的股市操盤手！</div>
             </div>
-        <!-- </transition> -->
-
+            <div class="text-3xl lg:text-5xl text-center pt-2">學會這套秘密公式 已經成為出色的股市操盤手！</div>
     <hr class="mt-2 lg:hidden">
-        <div class="main text-left lg:text-center text-2xl p-2 lg:p-0 leading-10">
+        <div class="main text-left lg:text-center text-2xl lg:text-4xl p-8 lg:p-0 leading-10 mt-8 mb-4">
             <p>許多人一聽到<span>「股市交易公式」</span>會開始緊張，因為他們會害怕自己無法學會</p>
         </div>
-        <div class="student-main h-20 text-center text-2xl lg:text-3xl  text-secondary bg-advantage  pt-2 m-0">
+        <div class="flex student-main h-48 items-center text-center justify-center text-2xl lg:text-4xl text-secondary bg-advantage m-0">
             <h1>老師，我是新手這個公式會跟數學一樣困難嗎？</h1>
         </div>
         <div class="student-second  text-center">
             
         </div>
-        <div class="down p-8 text-left lg:text-center lg:text-2xl leading-10">
+        <div class="down p-8 text-left lg:text-center text-2xl lg:text-4xl leading-10">
             <h1>對於在求學階段對數學有陰影的人，不用擔心，只要你的視力正常，能分辨出圖形，沒有色盲，基本上都能在短時間內學會！</h1>
         </div>
-        <div class=" student-third flex items-center justify-evenly text-2xl bg-advantage py-10">
+        <div class="student-third flex items-center justify-evenly text-2xl xl:text-4xl bg-advantage py-10 mb-8">
             <p>沒有投資經驗的新手，已經在市場中做到 <span>穩定獲利 !</span></p>
         </div>
-        <div class=" student-fourth text-2xl bg-advantage  py-24">
+        <div class=" student-fourth text-2xl xl:text-4xl bg-advantage  py-24">
             <p>從新手開始買房子，這位學生 <span>買了房子 !</span></p>
         </div>  
-        <div class="main2 space-y-6 lg:flex md:flex-col items-center text-left lg:text-3xl pt-12 p-2 leading-10 ">
+        <div class="main2 space-y-6 lg:flex md:flex-col items-center text-left text-2xl lg:text-3xl pt-12 p-2 leading-10 ">
             <p class="text-secondary">記得曾有學生問我：「老師，股市真的能用小資金操作嗎？ 3萬、5萬塊也可以？」</p>
             <p>這位學生問完的隔天，我開了一個示範帳戶，裡面放入3萬7的小資金，直接實測給他看！</p>
             <img src="../assets/student4.png" alt="">
         </div>
-        <div class=" student-fifth bg-advantage text-2xl  py-16 lg:py-32">
-            <p>從新手開始買房子，這位學生 <span>買了房子 !</span></p>
+        <div class="student-fifth bg-advantage text-2xl xl:text-4xl   lg:py-32">
+            <p>最終接近半年時間，我將 <span>起始資金3萬7</span> 的小倉帳號，<span>操作到130萬！</span></p>
         </div> 
         <div class="row main main-inside2 flex md:flex-col items-center pt-12">
             <div class="box1 box-inside2 text-center">
@@ -126,7 +123,6 @@ export default {
     background-size: cover;
     background-position-x: 60%;
     height: 20rem;
-    // width: 100%;
     padding-right: 10rem;
     padding-bottom: 10rem;
     background-repeat: no-repeat;
@@ -144,7 +140,7 @@ export default {
     background-image: url('../assets/student3.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-x: 30%;
+    // background-position-x: 30%;
     height: 20rem;
     width: 100%;
     padding-left: 12rem;
@@ -164,8 +160,8 @@ export default {
     background-image: url('../assets/student2.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-x: 30%;
-    height: 50vh;
+    // background-position-x: 30%;
+    height: 20rem;
     width: 100%;
     padding-left: 12rem;
     span{
@@ -208,17 +204,20 @@ export default {
             left: 45%;
         }
         .student-third{
+            height: 50vh;
             padding-right: 30rem;
             background-size: contain;
         }
         .student-fourth{
+            height: 50vh;
             background-position-x: 30%;
             padding-left: 60rem;
             background-size: contain;
         }
         .student-fifth{
+            height: 50vh;
             background-position-x: 30%;
-            padding-left: 60rem;
+            padding-left: 40rem;
             background-size: contain;
         }
 }

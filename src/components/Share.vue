@@ -1,11 +1,12 @@
 <template>
-<div class="main items-center   ">
-  <div class="inside-box flex md:flex-col flex-wrap p-5">
-      <div class="box-1 justify-center bg-secondary text-lg  text-white mt-5 rounded-md p-2">
-          <h1 class="text1 flex font-bold">現場分享</h1>
-      </div>
+<div class="main">
+    <div class="inside-box flex md:flex-col flex-wrap md:content-around p-5">
+        <div class=" bg-secondary text-lg xl:text-4xl  text-white mt-5 rounded-md p-2">
+            <h1 class="text1 flex justify-center font-bold">現場分享</h1>
+        </div>
+    </div>
     <div class="text-3xl text-left lg:text-center pt-2">現場講座中將與你分享五大實戰要點</div>
-  </div>
+
   <hr class="mt-2">
     <div class="main2 flex flex-col pt-8">
         <div class="box flex items-center text-secondary text-2xl">
@@ -13,7 +14,7 @@
             <span>台股台指期當沖</span>
         </div>    
         <div class="content flex justify-center pt-8">
-            <div class="content-1 flex text-2xl pl-2">
+            <div class="content-1 w-3/4 flex text-2xl lg:text-4xl pl-2">
                 <p>如何透過公式，清楚的抓出任何投資商品的走勢？最精采的內容，線上不能公開的秘密，我將在現場跟你分享。</p>
             </div>
         </div>      
@@ -24,7 +25,7 @@
             <span>提高勝率的八大型態</span>
         </div>    
         <div class="content flex justify-center pt-8">
-            <div class="content-1 flex text-2xl pl-2">
+            <div class="content-1 flex w-3/4 text-2xl lg:text-4xl pl-2">
                 <p>觀察超過3萬多張盤勢之後，我歸納出的8大型態，用對了，可以大幅度提高你的交易勝率！</p>
             </div>
         </div>      
@@ -35,7 +36,7 @@
             <span>成功交易人的四大特質與十大特性</span>
         </div>    
         <div class="content justify-center flex pt-8">
-            <div class="content-1 flex text-2xl pl-2">
+            <div class="content-1 flex w-3/4 text-2xl lg:text-4xl pl-2">
                 <p>在投資領域，技術很重要，但是心態更重要，如果你在投資路上績效不理想，這些特質與特性可以幫助你重新檢視自己。</p>
             </div>
         </div>      
@@ -46,7 +47,7 @@
             <span>停損的藝術，計算盈虧讓每次交易都俱備最佳cp值！</span>
         </div>    
         <div class="content justify-center flex pt-8">
-            <div class="content-1 flex text-2xl pl-2">
+            <div class="content-1 flex w-3/4 text-2xl lg:text-4xl pl-2">
                 <p>盈虧比，這個重要觀念，很多操作十多年的投資人都可能不知道，搞懂盈虧比，抓住最佳停損時機，才是交易能穩定獲利的王道。</p>
             </div>
         </div>      
@@ -57,7 +58,7 @@
             <span>上班族也能操盤！特殊高勝率操盤法！每天10分鐘輕鬆交易！</span>
         </div>    
         <div class="content justify-center flex pt-8">
-            <div class="content-1 flex text-2xl pl-2">
+            <div class="content-1 flex w-3/4 text-2xl lg:text-4xl pl-2">
                 <p>上班族上班無法操盤怎麼做？完全不用擔心，你可以運用早上10分鐘，簡單的方式快速搞定交易。</p>
             </div>
         </div>      
@@ -97,9 +98,7 @@ export default {
                     trigger: ".main-inside4",
                     start: "top center",
                     end: "bottom 50%",
-                    // markers: true,
                     scrub: true,
-                    // pin: true
                 },
             })
             .from(".box-inside4", { x: -100, y: 300, rotation: 180, opacity: 0})
@@ -162,7 +161,7 @@ export default {
                 position: relative;
                 left: 40%;
                 width: 20rem;
-                padding: 10px;
+                // padding: 10px;
             }
             .box1{
                 background-size: contain;
@@ -180,7 +179,7 @@ export default {
             .box{
                 border-radius: 10px;
                 text-align: center;
-                // margin-left: 40%;
+                margin-left: -30%;
             }
         }
 

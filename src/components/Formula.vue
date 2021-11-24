@@ -1,10 +1,10 @@
 <template>
-    <div class="main h-100 items-center bg-dark_black  text-2xl mt-12 pt-12">
+    <div class="main h-100 bg-dark_black  text-2xl mt-12 pt-12">
         <div class="box-pic">
             <img src="../assets/teacher2.png" alt="">
         </div>
         
-        <ol class="list-disc lg:list-none  p-10 text-left lg:text-center font-black text-secondary">
+        <ol class="flex flex-col items-center list-disc  p-10  lg:text-center text-2xl lg:text-6xl font-black text-secondary space-y-8 mb-4">
             <li>短線交易的秘密公式</li>
             <span> 將幫助你建立清晰有架構的交易方式，並讓你有信心在股市中達成穩定獲利 !</span>
             <li>短線交易的秘密公式</li>
@@ -12,24 +12,21 @@
             <li>短線交易的秘密公式</li>
             <span> 將帶領你，運用小資金操作股市，逐步滾起百萬獲利！</span>
         </ol>
-    <div class="main text-left lg:text-center p-2 leading-10">
-        <h1 class="font-bold text-2xl text-white">這套短線交易公式已被應用於</h1>
+    <div class="main text-left lg:text-center text-2xl lg:text-6xl p-2 leading-10 mt-4">
+        <h1 class="font-bold text-white">這套短線交易公式已被應用於</h1>
     </div>
         <hr class="mt-2 py-4">
-        <div class="main2 flex flex-col">
+        <div class="main2 flex flex-col xl:text-2xl">
             <div class="box flex  text-secondary"  >
                 <h1>01</h1>
                 <span>台股股票</span>
             </div>  
-            <div class="content flex justify-evenly p-2">
-                <div class="content-1 text-xl items-center flex flex-col pl-2"  >
+            <div class="content flex justify-evenly  items-center p-2">
+                <div class="content-1 text-xl items-center xl:text-3xl flex flex-col pl-2"  >
                     <p>尋找飆股學生曾抓出近<span>300%獲利飆股 !</span></p>
                     <img src="../assets/form1.png" alt="">
                 </div>
                 <img src="../assets/form.png" >
-                <!-- <div class="content-2 pr-2">
-                    <img src="../assets/foot.png" alt="">
-                </div> -->
             </div>         
         </div>
         <div class="main2">
@@ -38,7 +35,7 @@
                 <span>台股台指期當沖</span>
             </div>  
             <div class="content flex justify-evenly pt-8">
-                <div class="content-1 text-xl items-center  flex pl-2" >
+                <div class="content-1 text-xl xl:text-3xl items-center  flex pl-2" >
                     <p>分析盤勢，清楚抓出近期走向，台股一次下殺，<span>獲利達1000點！</span></p>
                     
                 </div>
@@ -51,18 +48,18 @@
                 <span>台股台指期波段</span>
             </div>  
             <div class="content flex justify-center pt-8 mb-10">
-                <div class="content-1 text-xl  flex pl-2">
+                <div class="content-1 text-xl xl:text-3xl flex pl-2">
                     <p>當你短線交易做的成功了，來挑戰波段單，獲利更驚人</p>
                 </div>
             </div>         
         </div>
-        <div class="main2">
+        <div class="main2 ">
             <div class="box flex  text-secondary">
                 <h1>04</h1>
                 <span>美股當沖</span>
             </div>  
-            <div class="content flex justify-center pt-8">
-                <div class="content-1 text-xl  flex pl-2">
+            <div class="content flex justify-center  pt-8">
+                <div class="content-1 text-xl xl:text-3xl flex pl-2">
                     <p>當初這套公式，就是在美股當沖中練成，自然能應用到美股上！</p>
                 </div>
             </div>         
@@ -73,7 +70,7 @@
                 <span>美股個股交易</span>
             </div>  
             <div class="content flex justify-center pt-8">
-                <div class="content-1 text-xl  flex pl-2">
+                <div class="content-1 text-xl xl:text-3xl flex pl-2">
                     <p>有在關注特斯拉？蘋果？想交易美股，也可以透過公式解析！</p>
                 </div>
             </div>         
@@ -146,7 +143,6 @@ export default {
         }
         ol{
             span{
-                font-size: 16px;
                 color: #fff;
             }
         }
@@ -206,12 +202,17 @@ export default {
             height: 40rem;
             width: 30rem;
         }
+        ol{
+            span{
+                font-size: 32px;
+            }
+        }
     }
     .main2{
         .box{
             border-radius: 10px;
             text-align: center;
-            margin-left: 40%;
+            margin-left: 15%;
         }
         // display: flex;
         // justify-content: space-around;

@@ -44,18 +44,19 @@
       data-aos-delay='1500'>
           <img src="../assets/Group.png" alt="">
         </div>
-        <div class="header-box3 flex flex-col text-2xl" data-aos="fade-up" data-aos-duration="1500" data-aos-delay='1500'>
-          <span>曾歷經頂尖交易作手地獄訓練 並在2年內研究過</span>
-          <p> 35,040張盤勢… 以及 上百種操作模式</p>
+        <div class="header-box3 flex text-center space-y-8 flex-col text-2xl" data-aos="fade-up" data-aos-duration="1500" data-aos-delay='1500'>
+          <span>曾歷經頂尖交易作手地獄訓練</span>
+          <p>並在<strong>2年內研究過</strong></p>
+          <span class="header-box3_inside flex"> <font>35,040張盤勢…</font><p>以及</p><font>上百種操作模式</font></span>
         </div>
           <div class="header-box4" data-aos="fade-down" data-aos-duration="1500">
             <img src="../assets/lialia.png"  alt=""> 
           </div>
         </div>
-          <div class="main flex flex-col  justify-center text-center h-60 w-screen bg-secondary text-white">
-            <p>這是讓我贏得全球交易競賽前四強的武器</p>
+          <div class="main flex flex-col items-center justify-center text-center h-60 w-screen bg-secondary text-white ">
+            <p class="text-4xl mb-8">這是讓我贏得全球交易競賽前四強的武器</p>
             <p class="text-3xl">短線交易最高效的秘密公式!</p>
-            <div class="main_box bg-white w-1/4 text-secondary">競賽中2周創造4倍獲利</div>
+            <div class="main_box bg-white w-2/5 text-4xl text-secondary">競賽中2周創造4倍獲利</div>
         </div>
   </div>
 </div>
@@ -92,11 +93,11 @@ export default {
         scrollTrigger: ".header-box1 ",
         duration: 3,
         color: "#fa0",
-        background: "#000",
         yoyo: true,
         repeat: -1,
-        ease: "power2"
+        ease: "power2",
       })
+      
     }
 
     onMounted(() => {
@@ -174,6 +175,7 @@ export default {
     width: 100vw;
     background-size: cover;
     .header-img{
+      // background: aqua;
       position: absolute;
       top: 5%;
       right: 5%;
@@ -181,29 +183,43 @@ export default {
     .header-box{
       position: absolute;
       top: 10%;
-      left: 22%;
+      left: 18%;
       font-size: 36px;
     }
     .header-box1{
       position: absolute;
       top: 20%;
-      left: 16%;
+      left: 10%;
       font-size: 52px;
-      background-color:#F8F9FA;
+      font-weight: 800;
       font{
         color: #77ADAE;
+        background: rgba(255, 255, 255, 0.8);
       }
     }
     .header-box2{
       position: absolute;
-      top: 45%;
-      left: 17%;
+      // top: 45%;
+      // left: 17%;
+      left: 6.95%;
+      right: 39.08%;
+      top: 45.91%;
+      width: 700px;
+      height: 150px;
     }
     .header-box3{
       position: absolute;
-      top: 65%;
+      top: 70%;
       left: 10%;
       font-size: 36px;
+      .header-box3_inside{
+        padding: 5px;
+        background: rgba(255, 255, 255, 0.8);
+      }
+      font{
+        color: #77ADAE;
+        background: rgba(255, 255, 255, 0.8);
+      }
     }
     .header-box4{
       position: relative;
@@ -215,14 +231,10 @@ export default {
     .main_box{
       position: relative;
       top: 10%;
-      left: 18%;
-      width: 12rem;
       padding: 10px;
     }
   @media (min-width: 1280px) {
-    .main_box{
-      left: 45%;
-    }
+
     .header-box4{
       position: relative;
       top: 5%;

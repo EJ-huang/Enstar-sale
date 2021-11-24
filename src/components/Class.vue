@@ -4,7 +4,7 @@
           <div class="main1">
 
           </div>
-        <div class="text-3xl text-left pt-2 pb-2">除了講座以外，我曾在</div>
+        <div class="text-3xl lg:text-5xl text-left pt-2 pb-2">除了講座以外，我曾在</div>
         <div class="inside flex justify-items-start pb-2">
             <div class=" justify-center bg-secondary text-lg text-white lg:mt-5 rounded-md p-2 mr-2">
                 <h1 class="flex content-center font-bold">hahow</h1>
@@ -14,9 +14,9 @@
             </div>
         </div>
 
-    <div class="text-3xl text-left pt-2 pb-2"> 開設過許多課程</div>
+    <div class="text-3xl lg:text-5xl text-left pt-2 pb-2"> 開設過許多課程</div>
 <hr class="mt-2 mb-8 pb-2">
-    <h1>累積學員近千人，評價都還不錯！</h1>
+    <h1 class="lg:text-5xl">累積學員近千人，評價都還不錯！</h1>
             <!-- <div class="box1 pt-2">
                 <img src="../assets/classbg1.png" alt="">
             </div> -->
